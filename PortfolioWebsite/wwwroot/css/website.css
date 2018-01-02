@@ -1,8 +1,20 @@
-﻿#contactForm{
+﻿#contactForm {
     background-color: lightgrey;
+    display: inline-block;
+    position: relative;
 }
 
 #contactForm input[type=submit] {
     background-color:forestgreen;
     color:whitesmoke;
+    width:auto;
+}
+
+#summarySection {
+
+}
+
+#headShot {
+    padding: 10px;
+    position: relative;
 }
