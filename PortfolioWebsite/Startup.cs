@@ -22,6 +22,10 @@ namespace PortfolioWebsite
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
+            app.UseMvc(cfg => {
+                cfg.MapRoute("Foo", "/users/manage", new { controller = "UserManagement", Action = "index" });
+                });
         }
     }
 }
