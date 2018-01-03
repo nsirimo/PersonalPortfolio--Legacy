@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PortfolioWebsite.Services;
 using PortfolioWebsite.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace PortfolioWebsite.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            _mailService = mailService;
+        }
 
         public IActionResult Index()
         {
@@ -26,7 +33,14 @@ namespace PortfolioWebsite.Controllers
         [HttpPost("contact")]
         public IActionResult Contact(ContactViewModel model)
         {
-            
+            if (ModelState.IsValid)
+            {
+                // Send the email
+                _mailService.SendMessage("nicolassirimongkol@gmail.com", model.Subject, $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+                ViewBag.UserMessage = "Mail Sent";
+                ModelState.Clear();
+            }
+
             return View();
         }
 
