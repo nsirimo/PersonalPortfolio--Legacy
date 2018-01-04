@@ -2,23 +2,36 @@
 <html>
 <head>
     <title>Nicolas Sirimongkol: @ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/css/website.css" rel="stylesheet" />
 </head>
 <body>
-    <menu>
-        <ul>
-            <li><a asp-controller="App" asp-action="Index">Home</a></li>
-            <li><a asp-controller="App" asp-action="Contact">Contact Me</a></li>
-            <li><a asp-controller="App" asp-action="Resume">Online Resume</a></li>
-        </ul>
-    </menu>
-    <section>
-        <h2>@ViewBag.Title</h2>
+    <div class="navbar navbar-inverse">
+        <header class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand"><i class="fa fa-user-circle fa-spin"></i> Nicolas Sirimongkol</div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+            </div>
+            <div id="menu" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="App" asp-action="Contact">Contact Me</a></li>
+                        <li><a asp-controller="App" asp-action="Resume">Online Resume</a></li>
+                    </ul>
+            </div>
+        </header>
+    </div>
+    <section class="container">
+        <h2 class="text-center">@ViewBag.Title</h2>
         @RenderBody()
     </section>
-    <footer>Copyright 2017 Nicolas Sirimongkol</footer>
+    <footer class="container">
+        <div class="text-center">Copyright 2017 Nicolas Sirimongkol</div>
+    </footer>
       
     <script src="~/lib/jQuery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/index.js"></script>
     @RenderSection("scripts", false)
 </body>
