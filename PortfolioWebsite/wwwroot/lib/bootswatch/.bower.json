@@ -1,0 +1,15 @@
+{
+  "name": "bootswatch",
+  "homepage": "https://github.com/thomaspark/bootswatch",
+  "version": "4.0.0-beta.3",
+  "_release": "4.0.0-beta.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.0.0-beta.3",
+    "commit": "916c2129abd249633401a9fef66a8c535520e65a"
+  },
+  "_source": "https://github.com/thomaspark/bootswatch.git",
+  "_target": "v4.0.0-beta.3",
+  "_originalSource": "bootswatch",
+  "_direct": true
+}
