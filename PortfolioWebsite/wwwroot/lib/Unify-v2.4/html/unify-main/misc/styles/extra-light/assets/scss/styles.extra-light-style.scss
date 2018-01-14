@@ -1,0 +1,41 @@
+// Variables and Mixins
+@import "variables.extra-light-style";
+@import "../../../../../../assets/include/scss/unify";
+
+.g-font-tertiary {
+  font-family: $g-font-tertiary !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    weight: 400;
+    family: $g-font-secondary;
+  }
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+.u-header {
+  font-size: 1rem;
+
+  .navbar-nav {
+    font: {
+      weight: 400;
+      family: $g-font-tertiary;
+    }
+    letter-spacing: .15rem;
+  }
+
+  &__section--light .navbar-nav:not([class*="u-main-nav-v"]) .nav-link,
+  &__section--light--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link {
+    color: $g-color-black;
+  }
+}
+
+.btn {
+  font: {
+    weight: 400;
+    family: $g-font-tertiary;
+  }
+  letter-spacing: .15rem;
+}

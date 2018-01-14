@@ -1,0 +1,17 @@
+// Variables and Mixins
+@import "variables.heavy-style";
+@import "../../../../../../assets/include/scss/unify";
+
+/*------------------------------------
+  Headings
+------------------------------------*/
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    weight: 900;
+    family: $g-font-secondary;
+  }
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
