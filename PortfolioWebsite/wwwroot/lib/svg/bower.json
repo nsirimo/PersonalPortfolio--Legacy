@@ -1,0 +1,19 @@
+{
+  "name": "svg",
+  "homepage": "https://github.com/oscarotero/svg",
+  "authors": [
+    "oscarotero <oom@oscarotero.com>"
+  ],
+  "description": "Collection of svg logos with css classes",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "svg",
+    "logos",
+    "icons",
+    "graphics"
+  ],
+  "license": "MIT"
+}
