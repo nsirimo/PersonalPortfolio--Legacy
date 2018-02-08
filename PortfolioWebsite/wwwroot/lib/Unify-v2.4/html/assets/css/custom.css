@@ -1,7 +1,7 @@
 /* Add here all your css styles (customizations) */
 
 #Divder {
-  background-color: #66FCF1;
+  background-color: #D83F87;
   margin-top: 0px;
   border-width: 0;
   height: 1px;
@@ -10,14 +10,27 @@
   width: 50%;
 }
 
-#color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.6;
+#DivderHero {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #D83F87;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: 'Ailerons';
+  src: url('../../../../../css/Ailerons-Typeface.otf');
+  src: local('Ailerons Font'), local('Ailerons-Font'), url('../../../../../css/Ailerons-Typeface.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Moon';
+  src: url('../../../../../css/Moon2.0-Regular.otf');
+  src: local('Moon Font'), local('Moon-Font'), url('../../../../../css/Moon2.0-Regular.otf') format('opentype');
 }
 
 .intro {
@@ -30,14 +43,14 @@
   border-radius: 50%;
   margin: 20px;
   border-width: thick;
-  border: 2px solid #66FCF1;
+  border: 2px solid #44318D;
 }
 
 .frontPage {
   height: 970px;
   max-width: 100%;
   background-repeat: repeat-x;
-  background: linear-gradient(rgba(102, 252, 241, 0.1), rgba(102, 252, 241, 0.1)), url("../../../../../img/heroImageFinal.jpg") center;
+  background: linear-gradient(rgba(102, 252, 241, 0.0), rgba(102, 252, 241, 0.0)), url("../../../../../img/coverPhotoMountain2.jpg") center;
   background-size: cover;
   box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
   position: relative;
@@ -53,37 +66,38 @@
 }
 
 .hero-textLarge {
-  color: white;
+  color: ghostwhite;
   margin-bottom: 0px;
   font-size: 250%;
-  font: 500 55px/1.5 'Montserrat', Helvetica, sans-serif;
+  font: 500 55px/1.5 'Ailerons', Helvetica, sans-serif;
   font-weight: bolder;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 }
 
 .hero-textSmall {
-  color: #ff6a00;
+  color: ghostwhite;
   margin-top: 0px;
   font-size: 100%;
-  font: 500 30px/1.5 'Montserrat', Helvetica, sans-serif;
+  font: 500 30px/1.5 'Ailerons', Helvetica, sans-serif;
 }
 
 .navbar-default {
   background-color: transparent;
   border: none;
   padding: 5px;
+  font: 500 17px/1.5 'Ailerons', Helvetica, sans-serif;
 }
 
   .navbar-default .navbar-brand {
-    color: #ff6a00;
+    color: ghostwhite;
   }
 
-  .navbar-default .navbar-nav > li > a {
-    color: #ff6a00;
-  }
+    .navbar-default .navbar-nav > li > a {
+      color: ghostwhite;
+    }
 
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
-      color: #66FCF1;
+      color: #D83F87;
       background-color: transparent;
     }
