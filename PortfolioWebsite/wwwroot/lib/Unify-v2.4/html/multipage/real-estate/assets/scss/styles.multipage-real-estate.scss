@@ -1,0 +1,198 @@
+//
+// Variables and Mixins
+//
+
+@import "variables.multipage-real-estate";
+@import "../../../../assets/include/scss/unify";
+
+body {
+	background-color: $g-color-white;
+}
+
+main {
+	margin-top: 134.32px;
+}
+
+@media (max-width: $g-md) {
+	main {
+		margin-top: 129.53px;
+	}
+}
+
+p {
+  color: $g-color-text;
+}
+
+/*------------------------------------
+  Colors
+------------------------------------*/
+.g-color-text {
+	color: $g-color-text;
+
+	&--hover:hover {
+		color: $g-color-text;
+	}
+}
+
+.g-color-main {
+	color: $g-color-main;
+
+	&--active.active {
+		color: $g-color-main !important;
+	}
+
+	&--hover:hover {
+		color: $g-color-main;
+	}
+}
+
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+.g-bg-primary {
+	&-dark-v1 {
+		background-color: $g-color-primary-dark-v1;
+
+		&--active.active {
+			background-color: $g-color-primary-dark-v1 !important;
+		}
+
+		&--hover:hover {
+			background-color: $g-color-primary-dark-v1 !important;
+		}
+	}
+}
+
+.g-bg-main {
+	background-color: $g-color-main !important;
+
+	&--hover:hover {
+		background-color: $g-color-main !important;
+	}
+}
+
+.g-bg-secondary {
+	background-color: $g-color-secondary !important;
+
+	&--active.active {
+		background-color: $g-color-secondary !important;
+	}
+
+	&--hover:hover {
+		background-color: $g-color-secondary !important;
+	}
+}
+
+/*------------------------------------
+  Border Colors
+------------------------------------*/
+.g-brd-primary {
+	&-dark-v1 {
+		border-color: $g-color-primary-dark-v1 !important;
+
+		&--hover:hover {
+			border-color: $g-color-primary-dark-v1 !important;
+		}
+	}
+}
+
+.g-brd-text {
+	border-color: $g-color-text !important;
+}
+
+.g-brd-secondary {
+	border-color: $g-color-secondary !important;
+}
+
+/*------------------------------------
+  Sub Menu
+------------------------------------*/
+.hs-has-sub-menu > a::after {
+	font-size: 8px;
+	vertical-align: middle;
+}
+
+/*------------------------------------
+  Bootstrap
+------------------------------------*/
+/* Container Fluid */
+@media (min-width: $g-md) {
+	.container-fluid {
+	  padding-right: 30px;
+	  padding-left: 30px;
+	}
+}
+
+@media (max-width: $g-lg) {
+	.navbar-expand-lg > .container-fluid {
+		padding-right: 30px;
+	  padding-left: 30px;
+	}
+}
+
+@media (max-width: $g-md) {
+	.navbar-expand-lg > .container-fluid {
+		padding-right: 15px;
+	  padding-left: 15px;
+	}
+}
+
+@media (min-width: $g-lg) {
+	.navbar-collapse {
+		-ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+/* Tooltip */
+.tooltip {
+	font-weight: 500;
+
+	&.show {
+  	opacity: 1;
+  }
+
+  &-inner {
+	  padding: 8px 12px;
+	  color: $g-color-white;
+	  box-shadow: 0 5px 15px 0 rgba($g-color-black, .1);
+	  background-color: $g-color-primary;
+	}
+
+	&.bs-tooltip-top .arrow::before,
+	&.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+	  border-top-color: $g-color-primary;
+	}
+}
+
+/*------------------------------------
+  Accordions
+------------------------------------*/
+.u-accordion {
+  &__control-icon {
+    & i:nth-child(1) {
+      display: inline;
+
+      .collapsed & {
+        display: none;
+      }
+    }
+
+    & i:nth-child(2) {
+      display: none;
+
+      .collapsed & {
+        display: inline;
+      }
+    }
+  }
+}
+
+/*------------------------------------
+  Hamburger
+------------------------------------*/
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	background-color: $g-color-white;
+}
