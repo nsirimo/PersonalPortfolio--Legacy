@@ -101,3 +101,9 @@
       color: #D83F87;
       background-color: transparent;
     }
+
+
+.counter1 {
+  background: red;
+  background: linear-gradient(90deg, #A4B3B6, #D83F87);
+}

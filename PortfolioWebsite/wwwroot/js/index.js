@@ -31,7 +31,9 @@
         run();
     }
 
-    animateValue("value", 200, 2500, 20000);
+    animateValue("githubValue", 50, 326, 20000);
+    animateValue("coffeeValue", 50, 684, 20000);
+    animateValue("classValue", 2, 38, 20000);
 
     $(window).scroll(
         {
